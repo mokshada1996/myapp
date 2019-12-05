@@ -1,0 +1,13 @@
+<div class="table - responsive">
+    <table class="table">
+        <tr *ngFor="let product of products ">
+            <td>{{product.id}}</td>
+            <td>{{product.title}}</td>
+            <td>{{product.price}}</td>
+            
+<td>
+    <a routerLink="/edit/{{product.id}}">Edit</a>
+    </td>
+            </tr>
+        </table>
+    </div>
